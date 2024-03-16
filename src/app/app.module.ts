@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { NgxsModule } from '@ngxs/store';
 import { SongsState } from './store/songs/songs.state';
+import { ShopComponent } from './shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SongsState } from './store/songs/songs.state';
     RightMenuLyricsComponent,
     QuickMenuComponent,
     PlaylistMenuComponent,
+    ShopComponent,
   ],
   imports: [
     BrowserModule,

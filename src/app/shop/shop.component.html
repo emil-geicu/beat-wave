@@ -1,0 +1,19 @@
+<div class="content">
+  <div class="header-section"></div>
+  <div
+    class="banner-section"
+    [style.background-image]="'url(' + bannerImageUrl + ')'"
+  ></div>
+  <div class="content-section">
+    <div class="content-header">Shop</div>
+    <div class="categories">
+      <div *ngFor="let category of categories" class="category">
+        <div
+          class="category-image"
+          [style.background-image]="'url(' + category.imageUrl + ')'"
+        ></div>
+        <div class="category-name">{{ category.name }}</div>
+      </div>
+    </div>
+  </div>
+</div>

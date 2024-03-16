@@ -4,6 +4,7 @@ import { Song } from '../models/song';
 import { SongsState } from '../store/songs/songs.state';
 import { Observable } from 'rxjs';
 import { DeleteSong, SelectSong } from '../store/songs/songs.actions';
+import { BANNER } from '../../assets/constants';
 
 @Component({
   selector: 'app-home',
@@ -12,6 +13,7 @@ import { DeleteSong, SelectSong } from '../store/songs/songs.actions';
 })
 export class HomeComponent {
   @Select(SongsState.getSongs) songs$!: Observable<Song[]>;
+  bannerImageUrl = BANNER;
 
   constructor(private store: Store) {}
 

@@ -54,3 +54,9 @@ export const SONGS = [
       "Yeah\n Tensions is definitely rising\n T'd up right now\n T time, T time\n T time, T time, T time\n",
   },
 ];
+
+export const BANNER =
+  'https://3.bp.blogspot.com/-vd3HKLEsew0/T7uQM1U3BuI/AAAAAAAAAgk/12Nu4wEc8ZA/s1600/amy-lee-black-dark.jpg';
+
+export const SHOPBANNER =
+  'https://www.thebannerhub.co.uk/media/theme/festival-banners-image.jpg';

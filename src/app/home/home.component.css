@@ -8,6 +8,7 @@
 }
 .banner-section{
     background-color: rgb(119, 86, 145);
+    background-size: cover;
     margin-bottom: 10px;
 }
 .content-section{

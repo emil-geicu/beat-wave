@@ -1,10 +1,14 @@
 <div class="content">
   <ul>
-    <li>
+    <li
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       <mat-icon fontIcon="home"></mat-icon>
       <span class="icon-text">Home</span>
     </li>
-    <li>
+    <li routerLink="/shop" routerLinkActive="active">
       <mat-icon fontIcon="shopping_bag"></mat-icon>
       <span class="icon-text">Shop</span>
     </li>
