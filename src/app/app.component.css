@@ -1,0 +1,79 @@
+.grid-screen{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 90% 10%;
+    background-color: black;
+}
+
+.grid-main-content {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 20% 60% 20%;
+    background-color: black;
+}
+
+.player-section{
+    height: 100%;
+}
+
+.left-side {
+    height: 100%;
+}
+
+.main-panel {
+    background-color: #3E3E3E;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.right-side {
+    display: grid;
+    grid-template-rows: max-content minmax(0, 1fr); 
+    background-color: #3E3E3E;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.artist-info-panel{
+    background-color: black;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.lyrics-panel{
+    background-color: black;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.side-menu-grid{
+    display: grid;
+    height: 100%;
+    grid-template-rows: max-content minmax(0, 1fr);
+}
+
+.quick-menu{
+    background-color: #3E3E3E;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.playlist-menu{
+    background-color: #3E3E3E;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+  

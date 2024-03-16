@@ -1,0 +1,16 @@
+<div class="content">
+  <div class="header-section"></div>
+  <div class="banner-section"></div>
+  <div class="content-section">
+    <div class="content-header">Songs</div>
+    <ul>
+      <li *ngFor="let song of songs" class="tile">
+        <img class="cover-image" [src]="song.imgUrl" alt="Item Image" />
+        <div class="song-grid">
+          <div class="song-name">{{ song.name }}</div>
+          <div class="song-artist">{{ song.artist }}</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

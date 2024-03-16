@@ -1,0 +1,21 @@
+.content{
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 85% 5% 5%;
+}
+
+.cover-image{
+    width: 100%;
+    border-radius: 10px;
+}
+  
+.song-name{
+    font-size: 0.8vw;
+    color: white;
+}
+.song-artist{
+    padding-top: 10px;
+    font-size: 0.7vw;
+    opacity: 0.5;
+    color: white;
+}
