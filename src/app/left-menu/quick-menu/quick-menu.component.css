@@ -8,6 +8,7 @@ ul {
     height: 90%;
     padding: 0; 
     overflow-y: auto;
+    overflow: hidden;
 }
   
 li {
@@ -22,6 +23,8 @@ li:hover{
 }
 
 .mat-icon{
+    position: relative;
+    top: 2px;
     margin-left: 5px;
     margin-right: 10px;
 }

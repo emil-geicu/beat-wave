@@ -10,6 +10,9 @@ import { RightMenuLyricsComponent } from './right-menu/right-menu-lyrics/right-m
 import { QuickMenuComponent } from './left-menu/quick-menu/quick-menu.component';
 import { PlaylistMenuComponent } from './left-menu/playlist-menu/playlist-menu.component';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { NgxsModule } from '@ngxs/store';
+import { SongsState } from './store/songs/songs.state';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,13 @@ import { MatIconModule } from '@angular/material/icon';
     QuickMenuComponent,
     PlaylistMenuComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MatIconModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MatIconModule,
+    MatButtonModule,
+    NgxsModule.forRoot([SongsState]),
+  ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })

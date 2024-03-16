@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { SONGS } from '../../../assets/constants';
+import { SongsState } from '../../store/songs/songs.state';
+import { Select } from '@ngxs/store';
+import { Observable } from 'rxjs';
+import { Song } from '../../models/song';
 
 @Component({
   selector: 'app-right-menu-lyrics',
@@ -7,5 +10,5 @@ import { SONGS } from '../../../assets/constants';
   styleUrl: './right-menu-lyrics.component.css',
 })
 export class RightMenuLyricsComponent {
-  public song = SONGS[0];
+  @Select(SongsState.getActiveSong) song$!: Observable<Song>;
 }

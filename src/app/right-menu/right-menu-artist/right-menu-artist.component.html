@@ -1,5 +1,5 @@
 <div class="content">
-  <img class="cover-image" [src]="song.imgUrl" alt="Item Image" />
-  <div class="song-name">{{ song.name }}</div>
-  <div class="song-artist">{{ song.artist }}</div>
+  <img class="cover-image" [src]="(song$ | async)?.imgUrl" alt="Item Image" />
+  <div class="song-name">{{ (song$ | async)?.name }}</div>
+  <div class="song-artist">{{ (song$ | async)?.artist }}</div>
 </div>

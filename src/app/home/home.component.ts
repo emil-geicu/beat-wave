@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { SONGS } from '../../assets/constants';
+import { Select, Store } from '@ngxs/store';
+import { Song } from '../models/song';
+import { SongsState } from '../store/songs/songs.state';
+import { Observable } from 'rxjs';
+import { DeleteSong, SelectSong } from '../store/songs/songs.actions';
 
 @Component({
   selector: 'app-home',
@@ -7,5 +11,15 @@ import { SONGS } from '../../assets/constants';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  public songs = SONGS;
+  @Select(SongsState.getSongs) songs$!: Observable<Song[]>;
+
+  constructor(private store: Store) {}
+
+  selectSong(songId: string) {
+    this.store.dispatch(new SelectSong(songId));
+  }
+
+  deleteSong(songId: string) {
+    this.store.dispatch(new DeleteSong(songId));
+  }
 }

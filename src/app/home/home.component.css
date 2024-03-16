@@ -27,7 +27,7 @@
     height: 20%;
     color: white;
     display: grid;
-    grid-template-columns: max-content minmax(0, 1fr);
+    grid-template-columns: max-content minmax(0, 1fr) 10%;
     transition: background-color 0.1s ease; 
 }
 
@@ -67,4 +67,9 @@ li {
     padding-top: 10px;
     font-size: 10px;
     opacity: 0.5;
+}
+
+.mdc-icon-button{
+    justify-self: center;
+    align-self: center;
 }
