@@ -94,8 +94,50 @@ export const CATEGORIES = [
   },
 ];
 
+export const ITEMS = [
+  {
+    id: '1',
+    name: 'Jeans',
+    imgUrl:
+      'https://www.armani.com/content/images/cms/ycm/resource/blob/70326/6b8446dad33e2fc66a59dd9383d64e26/container-grid-1938-image-27995-0-data.jpg/w1920.jpg',
+    categoryId: '1',
+    description: 'High quality pair of jeans.',
+    price: 200,
+  },
+  {
+    id: '2',
+    name: 'T-Shirt',
+    imgUrl:
+      'https://d330gmu8jafas0.cloudfront.net/product/6501803356/1125x1500/6501803356-1.jpg',
+    categoryId: '1',
+    description: 'High quality shirt.',
+    price: 50,
+  },
+  {
+    id: '3',
+    name: 'T-Shirt',
+    imgUrl:
+      'https://d330gmu8jafas0.cloudfront.net/product/6501803356/1125x1500/6501803356-1.jpg',
+    categoryId: '1',
+    description: 'High quality shirt.',
+    price: 50,
+  },
+  {
+    id: '4',
+    name: 'T-Shirt',
+    imgUrl:
+      'https://d330gmu8jafas0.cloudfront.net/product/6501803356/1125x1500/6501803356-1.jpg',
+    categoryId: '1',
+    description: 'High quality shirt.',
+    price: 50,
+  },
+];
+
 export const BANNER =
   'https://3.bp.blogspot.com/-vd3HKLEsew0/T7uQM1U3BuI/AAAAAAAAAgk/12Nu4wEc8ZA/s1600/amy-lee-black-dark.jpg';
 
 export const SHOPBANNER =
   'https://www.thebannerhub.co.uk/media/theme/festival-banners-image.jpg';
+
+export const CLOTHINGBANNER =
+  'https://www.fashionbeans.com/wp-content/uploads/2019/11/rockandroll-1-1.jpg';

@@ -1,0 +1,25 @@
+<div class="content">
+  <div class="navigation-buttons">
+    <button
+      mat-icon-button
+      class="rounded-icon"
+      (click)="navigateBack()"
+      [disabled]="!canNavigateBack()"
+    >
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <button
+      mat-icon-button
+      class="rounded-icon"
+      (click)="navigateForward()"
+      [disabled]="!canNavigateForward()"
+    >
+      <mat-icon>arrow_forward</mat-icon>
+    </button>
+  </div>
+  <div class="profile-image">
+    <img
+      src="https://scontent.fcra1-1.fna.fbcdn.net/v/t39.30808-6/308103114_3238940252988638_1795295388257783829_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ylJ_coxKkSYAX-RV38g&_nc_ht=scontent.fcra1-1.fna&oh=00_AfAn4lM1uNQdqwisof7L20WH_SKBNCejY92WQvOx37K7pA&oe=65FB1563"
+    />
+  </div>
+</div>

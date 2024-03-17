@@ -1,0 +1,49 @@
+.content {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 15% 85%;
+  background-color: #161616;
+  padding: 50px;
+}
+.header-section {
+  color: white;
+  font-size: 30px;
+}
+.content-section {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 20px;
+  padding: 15px;
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+  }
+}
+
+.details {
+  background-color: #3e3e3e;
+  height: calc(100% - 25px);
+  width: 60%;
+  margin: 0px 20px 20px 20px;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.description {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.item-buy {
+  display: flex;
+  justify-content: left;
+  color: white;
+  font-size: 20px;
+  button {
+    position: relative;
+    top: -10px;
+  }
+}

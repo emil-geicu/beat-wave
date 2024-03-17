@@ -14,6 +14,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { NgxsModule } from '@ngxs/store';
 import { SongsState } from './store/songs/songs.state';
 import { ShopComponent } from './shop/shop.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { ShopCategoriesState } from './store/shopCategories/shopCategories.state';
+import { ItemsComponent } from './shop/items/items.component';
+import { ItemDialogComponent } from './shop/items/itemDialog/itemDialog.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +28,16 @@ import { ShopComponent } from './shop/shop.component';
     QuickMenuComponent,
     PlaylistMenuComponent,
     ShopComponent,
+    NavigationComponent,
+    ItemsComponent,
+    ItemDialogComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
     MatButtonModule,
-    NgxsModule.forRoot([SongsState]),
+    NgxsModule.forRoot([SongsState, ShopCategoriesState]),
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],

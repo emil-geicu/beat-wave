@@ -1,0 +1,26 @@
+<div class="content">
+  <div class="header-section">
+    <app-navigation></app-navigation>
+  </div>
+  <div
+    class="banner-section"
+    [style.background-image]="'url(' + bannerImageUrl + ')'"
+  ></div>
+  <div class="content-section">
+    <div class="content-header">{{ activeCategory.name }} items</div>
+    <div class="items">
+      <div *ngFor="let item of items" class="item" (click)="openDialog(item)">
+        <div class="item-image"><img src="{{ item.imgUrl }}" /></div>
+        <div class="item-details">
+          <div class="item-title">{{ item.name }}</div>
+          <div class="item-price">{{ item.price }}$</div>
+          <div class="item-buy">
+            <button mat-icon-button (click)="addToCart($event, item)">
+              <mat-icon>add_shopping_cart</mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

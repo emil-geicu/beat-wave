@@ -1,0 +1,18 @@
+<div class="content">
+  <div class="header-section">{{ data.item.name }}</div>
+  <div class="content-section">
+    <div class="item-image"><img src="{{ data.item.imgUrl }}" /></div>
+    <div class="details">
+      Description
+      <div class="description">{{ data.item.description }}</div>
+      Price
+      <div class="description">{{ data.item.price }} $</div>
+    </div>
+    <div class="item-buy">
+      Buy
+      <button mat-icon-button>
+        <mat-icon>add_shopping_cart</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
