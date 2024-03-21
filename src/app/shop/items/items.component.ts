@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Select } from '@ngxs/store';
+import { Select, Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { ShopCategoriesState } from '../../store/shopCategories/shopCategories.state';
 import { ShopCategory } from '../../models/category';
@@ -8,6 +8,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Item } from '../../models/item';
 import { HomeComponent } from '../../home/home.component';
 import { ItemDialogComponent } from './itemDialog/itemDialog.component';
+import { AddItem } from '../../store/cart/cart.actions';
 
 @Component({
   selector: 'app-items',
@@ -22,7 +23,7 @@ export class ItemsComponent implements OnInit {
   public bannerImageUrl!: string;
   public items!: Item[];
 
-  constructor(private dialog: MatDialog) {}
+  constructor(private dialog: MatDialog, private store: Store) {}
 
   ngOnInit(): void {
     this.activeCategory$.subscribe((category) => {
@@ -49,6 +50,7 @@ export class ItemsComponent implements OnInit {
   }
 
   addToCart(event: MouseEvent, item: any): void {
+    this.store.dispatch(new AddItem(item));
     event.stopPropagation();
   }
 

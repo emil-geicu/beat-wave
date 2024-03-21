@@ -18,6 +18,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { ShopCategoriesState } from './store/shopCategories/shopCategories.state';
 import { ItemsComponent } from './shop/items/items.component';
 import { ItemDialogComponent } from './shop/items/itemDialog/itemDialog.component';
+import { CartComponent } from './cart/cart.component';
+import { CartState } from './store/cart/cart.state';
 
 @NgModule({
   declarations: [
@@ -31,13 +33,14 @@ import { ItemDialogComponent } from './shop/items/itemDialog/itemDialog.componen
     NavigationComponent,
     ItemsComponent,
     ItemDialogComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
     MatButtonModule,
-    NgxsModule.forRoot([SongsState, ShopCategoriesState]),
+    NgxsModule.forRoot([SongsState, ShopCategoriesState, CartState]),
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
